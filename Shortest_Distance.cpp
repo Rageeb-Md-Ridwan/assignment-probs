@@ -20,7 +20,7 @@ int main()
         int a, b;
         long long w;
         cin >> a >> b >> w;
-        dis[a][b] = w;
+        dis[a][b] = min(dis[a][b] , w); //for mutliple edges
     }
     for (int k = 1; k <= n; k++)
     {
